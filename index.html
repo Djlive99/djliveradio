@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Dj Live</title>
+		<link rel="icon" type="image" href="images/djlive.png">
+		<!-- style.css linking here -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- font family linking here -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<!-- font-awesome.min.css linking here -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<!-- header section strt -->
+		<section class="header">
+			<!-- nav strt -->
+			<nav>
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul>
+						<li>
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<a href="about.html">ABOUT</a>
+						</li>
+                                                <li>
+							<a href="team.html">TEAM</a>
+						</li>
+						<li>
+							<a href="djs.html">DJS</a>
+						</li>
+						<li>
+							<a href="contact.html">CONTACT</a>
+						</li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+			<!-- nav end --><p>
+
+
+<div align="center"><img src="images/djlive.png" style="border: 3px solid #555;" alt="Description of the image">
+<style>
+audio {
+    border-radius: 8px;
+    background: #f1f3f4;
+    height: 50px;
+    border: 3px solid #555;
+}
+</style>
+<div align="center"><audio controls>
+    <source src='https://stream.rcast.net/71089?djlive=type.mp3'>
+</audio>
+                </section>
+		<!-- header section end -->
+		<!-- Network section strt -->
+		
+			<p><div align="center"><h1>Our Station</h1></p></div>
+			
+			<div class="row">
+				<div class="network-col">
+					<h3>Karachi</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis atque voluptate iusto veritatis est modi consequatur elit, sed do eiusmod
+					tempor incididunt.</p>
+				</div>
+				<div class="network-col">
+					<h3>Lahore</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis atque voluptate iusto veritatis est modi consequatur elit, sed do eiusmod
+					tempor incididunt.</p>
+				</div>
+				<div class="network-col">
+					<h3>Islamabad</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis atque voluptate iusto veritatis est modi consequatur elit, sed do eiusmod
+					tempor incididunt.</p>
+				</div>
+			</div>
+	
+		<!-- network section end -->
+		<!-- campus section strt -->
+			<div class="row">
+				<div class="campus-col">
+					<img src="images/karachi.png" alt="">
+					<div class="layer">
+						<h3>Karachi</h3>
+					</div>
+				</div>
+				<div class="campus-col">
+					<img src="images/lahore.png" alt="">
+					<div class="layer">
+						<h3>Lahore</h3>
+					</div>
+				</div>
+				<div class="campus-col">
+					<img src="images/islamabad.png" alt="">
+					<div class="layer">
+						<h3>Islamabad</h3>
+					</div>
+				</div>
+			</div>
+		
+		<!-- campus section end -->
+		<!-- facilities section strt -->
+		
+			<div align="center"><h1>Our Team</h1></div>
+			
+			<div class="row">
+				<div class="facilities-col">
+					<img src="images/djlive.png">
+					<div align="center"><h3>CEO XYZ</h3></div>
+				
+				</div>
+				<div class="facilities-col">
+					<img src="images/djlive.png">
+					<div align="center"><h3>STATION MANAGER</h3></div>
+					
+				</div>
+				<div class="facilities-col">
+					<img src="images/djlive.png">
+					<div align="center"><h3>PRODUCTION HEAD</h3></div>
+				
+				</div>
+			</div>
+		
+		<!-- facilities section end -->
+		<!-- testimonial section strt -->
+		
+		<!-- testimonial section end -->
+		<!-- Call to Action section strt -->
+		
+			<div align="center"><h1>The Heartbeat of the Community<br>The sound of your city</h1>
+			<a href="contact.html" class="hero-btn">CONTACT US</a>
+		
+		<!-- Call to Action section end -->
+		<!-- footer strt --><p>
+		
+			<h4>About Us</h4>
+			<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ut reprehenderit labore eligendi tenetur, sapiente ab doloremque id provident dignissimos <br> ipsa perspiciatis voluptates sunt facilis minus omnis illo ea maxime nesciunt.</p>
+			<div class="icons">
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-twitter"></i>
+				<i class="fa fa-instagram"></i>
+				<i class="fa fa-linkedin"></i>
+			</div>
+			<p><i class="fa fa-heart"></i><strong>DJ LIVE-BROADCAST MEDIA ZONE</strong><i class="fa fa-heart"></i></p>
+		
+		<!-- footer end -->
+		<!-- Javascript for toggle menu -->
+		<script>
+			var navLinks = document.getElementById("navLinks");
+			function showMenu(){
+				navLinks.style.right = "0";
+			}
+			function hideMenu(){
+				navLinks.style.right = "-200px";
+			}
+		</script>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<script>
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+  <link rel="stylesheet" href="./style.css"
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+<style>
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the content section */
+
+.content {
+  width: 77%;
+  margin: 50px auto;
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9;
+}
+@media (min-width: 500px) {
+  .content {
+    width: 43%;
+  }
+  #button {
+    margin: 30px;
+  }
+}
+.content h1 {
+  margin-bottom: -10px;
+  color: #03a9f4;
+  line-height: 1.5;
+}
+.content h3 {
+  font-style: italic;
+  color: #96a2a7;
+}
+</style>
+<!-- Back to top button -->
+<a id="button"></a>
+
+
+<!-- Some content to fill up the page -->
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
+
+
+	</body>
+</html>

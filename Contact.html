@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Dj Live</title>
+		<link rel="icon" type="image" href="images/djlive.png">
+		<!-- style.css linking here -->
+		<link rel="stylesheet" href="css/style.css">
+		<!-- font family linking here -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<!-- font-awesome.min.css linking here -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<!-- header section strt -->
+		<section class="sub-header">
+			<!-- nav strt -->
+			<nav>
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul>
+						<li>
+							<a href="index.html">HOME</a>
+						</li>
+						<li>
+							<a href="about.html">ABOUT</a>
+						</li>
+                                              <li>
+							<a href="team.html">TEAM</a>
+						</li>
+						<li>
+							<a href="djs.html">DJS</a>
+						</li>
+						<li>
+							<a href="contact.html">CONTACT</a>
+						</li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+			<!-- nav end --><p>
+              <div align="center"><audio controls>
+               <source src='https://stream.rcast.net/71089?djlive=type.mp3'></audio>
+             </section>
+		<!-- header section end -->
+               <!-- Contact us content strt -->
+                <div align="center"><h1>Contact Us</h1>
+			<div class="row">
+				<div class="contact-col">
+					<div>
+						<i class="fa fa-home"></i>
+						<span>
+							<br /><br /><br /><h5>XYZ Road, ABC Building</h5>
+							<p>JKL, City, Country</p>
+						</span>
+					</div>
+					<div>
+						<i class="fa fa-phone"></i>
+						<span>
+							<h5>+92 300 12345</h5>
+							<p>Monday to Saturday, 10AM tO 10PM</p>
+						</span>
+					</div>
+					<div>
+						<i class="fa fa-envelope-o"></i>
+						<span>
+							<h5>info@gmail.com</h5>
+							<p>Email us your query</p>
+						</span>
+					</div>
+				</div>
+				<div class="contact-col">
+					<form action="form handelar.php" method="post">
+						<input type="text" name="name" placeholder="Enter Your Name" required>
+						<input type="email" name="email" placeholder="Enter Email Address" required>
+						<input type="text" name="subject" placeholder="Enter Your Subject" required>
+						<textarea rows="8" name="message" placeholder="Message" required></textarea>
+						<button type="Submit" class="hero-btn red-btn">Send Message</button>
+					</form>
+				</div>
+			</div>
+		
+		
+		
+		<!-- footer strt -->
+		
+			<h4>About Us</h4>
+			<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ut reprehenderit labore eligendi tenetur, sapiente ab doloremque id provident dignissimos <br> ipsa perspiciatis voluptates sunt facilis minus omnis illo ea maxime nesciunt.</p>
+			<div class="icons">
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-twitter"></i>
+				<i class="fa fa-instagram"></i>
+				<i class="fa fa-linkedin"></i>
+			</div>
+			<p><i class="fa fa-heart"></i><strong>DJ LIVE-BROADCAST MEDIA ZONE</strong><i class="fa fa-heart"></i></p>
+
+		<!-- footer end -->
+		<!-- Javascript for toggle menu -->
+		<script>
+			var navLinks = document.getElementById("navLinks");
+			function showMenu(){
+				navLinks.style.right = "0";
+			}
+			function hideMenu(){
+				navLinks.style.right = "-200px";
+			}
+		</script>
+	</body>
+</html>
